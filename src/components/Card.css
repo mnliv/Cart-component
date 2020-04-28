@@ -1,0 +1,49 @@
+.Card {
+    width: 400px;
+}
+
+.Header {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.Card .Header img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 1s;
+}
+
+.overlay span {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.Header:hover .overlay{
+    opacity: .3;
+}
+
+.Header:hover img {
+    transform: scale(1.1);
+}
+
+.footer {
+    margin: 0;
+}
